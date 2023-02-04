@@ -16,7 +16,7 @@ public class SnakeAndLadderGame {
         while(player1position!=50&&player2position!=50)
         {   System.out.println();
             // Dice Computation Getting the Random Dice
-            x=(int) Math.floor(Math.random()*(6 -1 +1) + 1);
+            x = (int) Math.floor(Math.random()*(6 -1 +1) + 1);
             if((player1position+x)<=50)
 
 
@@ -107,12 +107,12 @@ public class SnakeAndLadderGame {
 
         System.out.println("Total number of dice throws made by each player is: "+count);
 
-        if(player1position>=50&&player2position>=50)
+        if(player1position==50&&player2position==50)
         {
             System.out.println("It's a tie....");
         }
 
-        else if(player1position>=50)
+        else if(player1position==50)
         {
             System.out.println(player1+" is the winner...");
         }
